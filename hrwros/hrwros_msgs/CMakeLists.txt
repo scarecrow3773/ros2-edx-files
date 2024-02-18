@@ -4,7 +4,7 @@ project(hrwros_msgs)
 
 # find_package(catkin REQUIRED COMPONENTS roscpp geometry_msgs std_msgs trajectory_msgs message_generation moveit_msgs actionlib actionlib_msgs)
 find_package(ament_cmake REQUIRED)
-find_package(roscpp REQUIRED)
+find_package(rclcpp REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
