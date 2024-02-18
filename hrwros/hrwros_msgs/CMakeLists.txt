@@ -1,17 +1,7 @@
-# cmake_minimum_required(VERSION 2.8.3)
-cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 2.8.3)
 project(hrwros_msgs)
 
-# find_package(catkin REQUIRED COMPONENTS roscpp geometry_msgs std_msgs trajectory_msgs message_generation moveit_msgs actionlib actionlib_msgs)
-find_package(ament_cmake REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(geometry_msgs REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(trajectory_msgs REQUIRED)
-find_package(message_generation REQUIRED)
-find_package(moveit_msgs REQUIRED)
-find_package(actionlib REQUIRED)
-find_package(actionlib_msgs REQUIRED)
+find_package(catkin REQUIRED COMPONENTS roscpp geometry_msgs std_msgs trajectory_msgs message_generation moveit_msgs actionlib actionlib_msgs)
 
 ################################################
 ## Declare ROS messages, services and actions ##
@@ -53,9 +43,9 @@ generate_messages(
 ###################################
 ## catkin specific configuration ##
 ###################################
-# catkin_package(
-#  CATKIN_DEPENDS  message_runtime roscpp geometry_msgs std_msgs trajectory_msgs moveit_msgs actionlib_msgs
-#)
+catkin_package(
+  CATKIN_DEPENDS  message_runtime roscpp geometry_msgs std_msgs trajectory_msgs moveit_msgs actionlib_msgs
+)
 
 ###########
 ## Build ##
